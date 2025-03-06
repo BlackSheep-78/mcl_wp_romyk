@@ -47,4 +47,6 @@
         - x Activate ACF
 
     - x Add header.php & footer.php to index.php
+    - x Make sure your page.php includes the_content() inside the WordPress Loop
+    - x Enable Pretty Permalinks - Settings > Permalinks
 
