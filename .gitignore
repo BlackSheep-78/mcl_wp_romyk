@@ -1,0 +1,54 @@
+# Ignore WordPress core files
+wp-admin/
+wp-includes/
+
+# Ignore environment-specific configuration files
+wp-config.php
+.env
+.env.local
+.env.*.local
+
+# Ignore database backups
+*.sql
+*.sqlite
+*.db
+
+# Ignore user-generated content
+wp-content/uploads/
+wp-content/cache/
+wp-content/backup-*
+wp-content/upgrade/
+
+# Ignore dependencies (auto-generated files)
+node_modules/
+vendor/
+composer.lock
+package-lock.json
+yarn.lock
+
+# Ignore system files and logs
+*.log
+*.swp
+*.swo
+*.bak
+.DS_Store
+Thumbs.db
+
+# Ignore IDE/editor-specific files
+.vscode/
+.idea/
+*.code-workspace
+
+# Ignore WP-CLI cache
+wp-cli.local.yml
+
+# Ignore SFTP, SSH, and deployment files
+*.pem
+*.crt
+*.key
+
+# If using Bedrock or Composer for WordPress:
+web/wp/
+web/wp-config.php
+
+# Ignore anything else specific to your project setup
