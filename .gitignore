@@ -19,6 +19,9 @@ wp-content/cache/
 wp-content/backup-*
 wp-content/upgrade/
 
+# Ignore plugins
+wp-content/plugins/
+
 # Ignore dependencies (auto-generated files)
 node_modules/
 vendor/
