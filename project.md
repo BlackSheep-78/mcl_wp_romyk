@@ -72,3 +72,4 @@
             - Make sure fields are working
             - Create fields with extension "Contact Form 7"
             - Manage email with extension "Flamingo"
+            

@@ -1040,3 +1040,9 @@ textarea#comment.update_mail::placeholder {
 .margin_top90 {
     margin-top: 90px;
 }
+
+.politique
+{
+    margin-top:50px;
+    text-align: justify;
+}

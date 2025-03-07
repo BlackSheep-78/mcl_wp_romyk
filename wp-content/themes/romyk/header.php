@@ -11,7 +11,7 @@
 <body <?php body_class(); ?>>
     <header>
         <!-- <h1><?php bloginfo('name'); ?></h1> -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light header_bg">
             <div class="container">
                 <a class="navbar-brand" href="<?php echo home_url(); ?>">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="Logo">

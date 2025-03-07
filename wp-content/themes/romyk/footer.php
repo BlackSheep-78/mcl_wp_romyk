@@ -2,19 +2,20 @@
 
 <?php
 
-    $slug   = basename(get_permalink());
     $margin = 'margin_top90';
 
-    if($slug  == 'contact')
+    if (is_page('contact'))
     {
         $margin = '';
     }
+
+    $host = get_template_directory_uri();
 
 ?>
 
 <div class="copyright_section <?= $margin ?>">
     <div class="container">
-        <p class="copyright_text">&copy; <?php echo date("Y"); ?> All Rights Reserved. Design by <a href="https://html.design">Free Html Templates</a></p>
+     <p class="copyright_text"><a href=" <?= $host ?> /politique-de-confidentialite">Politique de confidentialité</a> &bull; &copy; <?php echo date("Y"); ?> All Rights Reserved &bull; Design by <a href="https://html.design">Free Html Templates</a></p>
     </div>
 </div>
 
