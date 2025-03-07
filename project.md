@@ -63,13 +63,16 @@
 
     - Creating page contents using templates ex: page-{slug}.php 
         - Home
+            - Make carroussel cicle through "Articles"
         - About
+            - Expand "read more"
         - Icecream
+            - Expand "read more"
         - Services
+            Expand "read more"
         - x Blog
             - Load testimonials dynamically from database
         - x Contact Us
             - Make sure fields are working
             - Create fields with extension "Contact Form 7"
             - Manage email with extension "Flamingo"
-            
