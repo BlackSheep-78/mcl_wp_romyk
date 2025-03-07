@@ -50,3 +50,25 @@
     - x Make sure your page.php includes the_content() inside the WordPress Loop
     - x Enable Pretty Permalinks - Settings > Permalinks
 
+    - x Add bootstrap
+
+    - x Create the menu (header)
+        - x Register the Menu in functions.php
+        - x Add menu elements in Wordpress (Appearance > Menus) if needed
+        - x Register menu in Wordpress
+        - x Add class Bootstrap_NavWalker , file : /inc/class-bootstrap-navwalker.php
+        - x If menu not showing , go to Appearance > Menus and tick "Primary menu"
+
+    - x Create the footer
+
+    - Creating page contents using templates ex: page-{slug}.php 
+        - Home
+        - About
+        - Icecream
+        - Services
+        - x Blog
+            - Load testimonials dynamically from database
+        - x Contact Us
+            - Make sure fields are working
+            - Create fields with extension "Contact Form 7"
+            - Manage email with extension "Flamingo"
