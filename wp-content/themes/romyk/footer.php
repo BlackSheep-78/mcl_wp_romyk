@@ -9,13 +9,14 @@
         $margin = '';
     }
 
-    $host = get_template_directory_uri();
+    //$host = get_template_directory_uri();
+    $host = home_url();
 
 ?>
 
 <div class="copyright_section <?= $margin ?>">
     <div class="container">
-     <p class="copyright_text"><a href=" <?= $host ?> /politique-de-confidentialite">Politique de confidentialité</a> &bull; &copy; <?php echo date("Y"); ?> All Rights Reserved &bull; Design by <a href="https://html.design">Free Html Templates</a></p>
+     <p class="copyright_text"><a href="<?= $host ?>/politique-de-confidentialite">Politique de confidentialité</a> &bull; &copy; <?php echo date("Y"); ?> All Rights Reserved &bull; Design by <a href="https://html.design">Free Html Templates</a></p>
     </div>
 </div>
 

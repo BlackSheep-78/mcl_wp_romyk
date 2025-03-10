@@ -8,7 +8,7 @@
     */
 
    get_header();
-   include __DIR__."/inc.page-contact.php";
+   include __DIR__."/inc.page-contact-us.php";
    get_footer(); 
 ?>
 

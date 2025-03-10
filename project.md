@@ -15,7 +15,7 @@
         - icecream
         - index
         - services
-    -  Use of ACF (Advanced Custom Fields).
+    -  Use of ACF extention (Advanced Custom Fields).
 
 - Step by step How To
 
@@ -62,8 +62,8 @@
     - x Create the footer
 
     - Creating page contents using templates ex: page-{slug}.php 
-        - Home
-            - Make carroussel cicle through "Articles"
+        - x Home
+            - x Make carroussel cicle through "Articles"
         - About
             - Expand "read more"
         - Icecream
@@ -71,8 +71,9 @@
         - Services
             Expand "read more"
         - x Blog
-            - Load testimonials dynamically from database
+            - x Load testimonials dynamically from database
         - x Contact Us
+            - feature: subescribe to news letter
             - Make sure fields are working
             - Create fields with extension "Contact Form 7"
             - Manage email with extension "Flamingo"
