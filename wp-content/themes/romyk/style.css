@@ -961,20 +961,35 @@ textarea#comment::placeholder {
 }
 
 .update_mail {
-    color: #444444;
-    width: 100%;
-    height: 55px;
-    font-size: 16px;
-    padding: 13px 10px 0px 10px;
     background-color: #ffffff;
-    margin: 0 auto;
-    justify-content: center;
-    align-items: center;
+    border: none;
+    color: #333;
+    padding: 10px;
+    font-size: 14px;
+    width: 100%;
     display: block;
-    margin-top: 10px;
-    border: 0px;
+    margin-bottom: 10px;
     text-transform: uppercase;
 }
+
+.subscribe_btn {
+    display: inline-block;
+    background-color: #fc95c4;
+    color: #ffffff;
+    padding: 12px 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+
+.subscribe_btn:hover {
+    background-color: #ffffff;
+    color: #333;
+}
+
+
 
 textarea#comment.update_mail::placeholder {
     color: #444444;

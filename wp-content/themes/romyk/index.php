@@ -12,3 +12,4 @@
 
     get_footer(); // Includes the footer.php file
 ?>
+telnet smtp.mail.me.com 587

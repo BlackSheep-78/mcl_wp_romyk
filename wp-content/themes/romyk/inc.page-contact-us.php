@@ -7,10 +7,10 @@
             <div class="col-md-4">
                 <div class="contact_main">
                     <h1 class="contact_taital">Contact Us</h1>
-                    
-                    <!-- Contact Form (Using Contact Form 7) -->
+
+                    <!-- Contact Form 7 (Styled) -->
                     <div class="form-group">
-                        <?php echo do_shortcode('[contact-form-7 id="5e93c1e" title="Formulaire de contact 1"]'); ?>
+                        <?php echo do_shortcode('[contact-form-7 id="4777505" title="contact"]'); ?>
                     </div>
                 </div>
             </div>
@@ -40,38 +40,12 @@
                     </ul>
                 </div>
 
-                <!-- Newsletter Subscription Form -->
+                <!-- Newsletter Subscription Form (Contact Form 7) -->
                 <div class="mail_main">
                     <h3 class="newsletter_text">Newsletter</h3>
-                    <form method="POST" action="">
-                        <div class="form-group">
-                            <input type="email" class="update_mail form-control" placeholder="Enter Your Email" name="subscriber_email" required>
-                        </div>
-                        <div class="subscribe_bt">
-                            <button type="submit" name="subscribe" class="btn btn-primary">Subscribe</button>
-                        </div>
-                    </form>
-
-                    <?php
-                    if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['subscribe'])) {
-                        global $wpdb;
-                        $table_name = $wpdb->prefix . "subscribers";
-                        $email = sanitize_email($_POST['subscriber_email']);
-
-                        if (!empty($email) && is_email($email)) {
-                            $exists = $wpdb->get_var($wpdb->prepare("SELECT COUNT(*) FROM $table_name WHERE email = %s", $email));
-
-                            if ($exists > 0) {
-                                echo '<p class="text-danger mt-2">You are already subscribed!</p>';
-                            } else {
-                                $wpdb->insert($table_name, array('email' => $email, 'date_subscribed' => current_time('mysql')));
-                                echo '<p class="text-success mt-2">Thank you for subscribing!</p>';
-                            }
-                        } else {
-                            echo '<p class="text-danger mt-2">Invalid email address!</p>';
-                        }
-                    }
-                    ?>
+                    <div class="form-group">
+                        <?php echo do_shortcode('[contact-form-7 id="b8ec47f" title="Newsletter"]'); ?>
+                    </div>
                 </div>
 
                 <!-- Social Icons -->
@@ -83,7 +57,6 @@
                         <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                     </ul>
                 </div>
-
             </div>
         </div>
     </div>
